@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Thanks to:
+https://codepen.io/alexakasanjeev/pen/RPxGXY    
+https://getcssscan.com/css-buttons-examples
+https://codepen.io/alfaris/pen/ZWPgYm
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extension Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shortcut Manager</h1>
+      <div class="box">
+          <div class="box-sm id-1"></div>
+          <div class="box-sm id-2"></div>
+          <div class="box-sm id-3"></div>
+          <div class="box-sm id-4"></div>
+          <div class="box-sm id-5"></div>
+          <div class="box-sm id-6""></div>
+        </div>
+    <h3>Extension Options</h3>
+    <form id="options-form">
+        <div class="form-group">
+          <label for="open-new-tab">Open a New Tab</label>
+          <button id="open-new-tab-btn" class="shortcut-btn">Set Shortcut</button>
+          <input type="text" id="open-new-tab" name="open-new-tab" readonly>
+        </div>
+        <div class="form-group">
+          <label for="duplicate-tab">Duplicate Tab Shortcut</label>
+          <button id="duplicate-tab-btn" class="shortcut-btn">Set Shortcut</button>
+          <input type="text" id="duplicate-tab" name="duplicate-tab" readonly>
+        </div>
+          <button class="save-btn" role="button">Save</button>
+      </form>
+      <span>
+        Made with ♥️ in <a class="city">Ankara</a>
+    </span>
+    </div>
+    <script src="options.js"></script>
+  </body>
+  </html>

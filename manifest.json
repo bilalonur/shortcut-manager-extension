@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "name": "Shortcut Manager",
+    "version": "0.0.1",
+    "description": "Configure custom shortcuts to perform various browser actions.",
+    "applications": {
+        "gecko": {
+          "id": "shortcut-manager@bonurtek.com"
+        }
+      },
+    "homepage_url": "https://github.com/bilalonur/shortcut-manager-extension",
+    "author": "Bilal Onur Eskili",
+    "icons": {
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "sessions"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+      },
+      "options_ui": {
+        "page": "options.html",
+        "browser_style": true,
+        "open_in_tab": true
+      },
+      "commands": {
+        "duplicate-tab": {
+          "suggested_key": { "default": "Alt+Shift+D" },
+          "description": "Duplicate the current tab"
+        },
+        "open-new-tab": {
+            "suggested_key": {
+              "default": "Ctrl+T"
+            },
+            "description": "Open a new tab"
+          }
+      },
+    "browser_action": {
+        "default_title": "Shortcut Manager",
+        "default_popup": "popup.html"
+    }
+}
