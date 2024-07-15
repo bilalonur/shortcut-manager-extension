@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Shortcut Manager",
     "version": "0.0.1",
-    "description": "Configure custom shortcuts to perform various browser actions.",
+    "description": "Configure custom keys for firefox shortcuts to perform various browser actions.",
     "applications": {
         "gecko": {
           "id": "shortcut-manager@bonurtek.com"
