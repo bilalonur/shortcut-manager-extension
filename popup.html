@@ -1,14 +1,31 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-    <title>Shortcut Manager</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcut Manager</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="popup.css">
-    <script src="popup.js"></script>
 </head>
 <body>
-  <p>You can change shortcuts in your Firefox for defined actions by clicking 'Configure' button below or you can go to 'about:addons' extension page of Firefox and click to settings icon. Then, you can open shortcut page by clicking 'Manage Shortcut Extension'.</p>
-  <p>This is an open-source project, you can make contribution via GitHub by opening PR. <a href="https://github.com/bilalonur/shortcut-manager-extension">Project Page</a></p>
-<button id="configure-button">Configure</button>
+    <div class="container mt-4 animate__animated animate__fadeIn">
+        <h1 class="text-center animate__animated animate__fadeInDown">Shortcut Manager</h1>
+        <p class="lead text-center animate__animated animate__fadeInUp">
+            Customize your Firefox shortcuts for defined actions. Click the 'Configure' button below or visit the 'about:addons' extension page in Firefox, then click the settings icon to manage shortcuts.
+        </p>
+        <div class="text-center animate__animated animate__fadeInUp">
+            <button id="configure-button" class="btn btn-primary animate__animated animate__pulse animate__infinite">Configure</button>
+        </div>
+        <div class="text-center mt-3 animate__animated animate__fadeInUp">
+            <p>
+                This is an open-source project. Contribute on GitHub by opening a PR:
+                <a href="https://github.com/bilalonur/shortcut-manager-extension" target="_blank" class="btn btn-link animate__animated animate__pulse">Project Page</a>
+            </p>
+          <p class="text-center mt-4">Developed by <a href="https://bilalonureskili.com">Bilal Onur Eskili</a> | <span style='color:rgba(128, 128, 128, 0.501)'>v0.0.1</span></p>
+      </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>
