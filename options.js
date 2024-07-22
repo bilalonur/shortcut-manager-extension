@@ -94,6 +94,8 @@ function saveOptions(event) {
 
   const duplicateTab = document.getElementById('duplicate-tab').value;
   const openNewTab = document.getElementById('open-new-tab').value;
+  const openRecentClosedTab = document.getElementById('open-recent-closed-tab').value;
+  const muteTab = document.getElementById('mute-tab').value;
 
   const commands = {
     "duplicate-tab": {
@@ -103,6 +105,14 @@ function saveOptions(event) {
     "open-new-tab": {
       "suggested_key": { "default": openNewTab },
       "description": "Open a new tab"
+    },
+    "open-recent-closed-tab": {
+      "suggested_key": { "default": openRecentClosedTab },
+      "description": "Open a new tab"
+    },
+    "mute-tab": {
+      "suggested_key": { "default": muteTab },
+      "description": "Muting focused tab"
     }
   };
 
@@ -123,11 +133,15 @@ function restoreOptions() {
   browser.storage.sync.get('commands').then((result) => {
     const commands = result.commands || {
       "duplicate-tab": { "suggested_key": { "default": "Alt+Shift+D" } },
-      "open-new-tab": { "suggested_key": { "default": "Ctrl+T" } }
+      "open-new-tab": { "suggested_key": { "default": "Ctrl+T" } },
+      "open-recent-closed-tab": { "suggested_key": { "default": "Alt+Shift+T" } },
+      "mute-tab": { "suggested_key": { "default": "Alt+Shift+M" } },
     };
 
     document.getElementById('duplicate-tab').value = commands["duplicate-tab"].suggested_key.default;
     document.getElementById('open-new-tab').value = commands["open-new-tab"].suggested_key.default;
+    document.getElementById('open-recent-closed-tab').value = commands["open-recent-closed-tab"].suggested_key.default;
+    document.getElementById('mute-tab').value = commands["mute-tab"].suggested_key.default;
   });
 }
 

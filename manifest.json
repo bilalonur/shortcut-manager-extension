@@ -33,11 +33,17 @@
           "description": "Duplicate the current tab"
         },
         "open-new-tab": {
-            "suggested_key": {
-              "default": "Ctrl+T"
-            },
-            "description": "Open a new tab"
-          }
+          "suggested_key": { "default": "Ctrl+T" },
+          "description": "Open a new tab"
+        },
+        "open-recent-closed-tab": {
+          "suggested_key": { "default": "Alt+Shift+T" },
+          "description": "Open the most recently closed tab"
+        },
+        "mute-tab": {
+          "suggested_key": { "default": "Alt+Shift+M" },
+          "description": "Mute or unmute the current tab"
+        }
       },
     "browser_action": {
         "default_title": "Shortcut Manager",
