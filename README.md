@@ -8,7 +8,7 @@ Shortcut Manager is a powerful Firefox extension that allows you to customize ke
 
 [Add to Firefox](https://addons.mozilla.org/en-US/firefox/addon/shortcut-manager/) • [Report Bug](https://github.com/bilalonur/shortcut-manager-extension/issues) • [Request Feature](https://github.com/bilalonur/shortcut-manager-extension/issues)
 
-![Shortcut Manager Screenshot](screenshot.png)
+![Shortcut Manager Screenshot](img/screenshot.png)
 
 ## Features
 
@@ -36,11 +36,6 @@ Shortcut Manager is a powerful Firefox extension that allows you to customize ke
 
 ## Development
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v14 or later)
-- [npm](https://www.npmjs.com/) (usually comes with Node.js)
-
 ### Setting up the development environment
 
 1. Clone the repository:
@@ -50,14 +45,6 @@ Shortcut Manager is a powerful Firefox extension that allows you to customize ke
 2. Navigate to the project directory:
    ```
    cd shortcut-manager-extension
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Build the extension:
-   ```
-   npm run build
    ```
 
 ### Loading the extension in Firefox
