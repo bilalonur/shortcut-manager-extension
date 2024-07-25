@@ -1,7 +1,11 @@
 const default_options = {
   background: false,
 };
-
+browser.runtime.onMessage.addListener((message) => {
+  if (message.action === "openChangelog") {
+      browser.tabs.create({url: browser.runtime.getURL("CHANGELOG.md")});
+  }
+});
 browser.commands.onCommand.addListener(async (command) => {
   console.log(`Command received: ${command}`);
   

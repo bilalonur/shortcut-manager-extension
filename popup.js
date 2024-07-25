@@ -26,6 +26,10 @@ const default_options = {
     document.getElementById('configure-button').addEventListener('click', function () {
       browser.runtime.openOptionsPage();
     });
+    document.getElementById('changelog-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      browser.runtime.sendMessage({action: "openChangelog"});
+  });
   });
   
 
